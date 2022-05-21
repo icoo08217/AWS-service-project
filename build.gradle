@@ -40,6 +40,9 @@ dependencies { // 프로젝트 개발에서 필요한 의존성들을 선언하�
     implementation('org.springframework.session:spring-session-jdbc')
     testImplementation('org.springframework.security:spring-security-test')
 
+    annotationProcessor('org.projectlombok:lombok')
+    testAnnotationProcessor('org.projectlombok:lombok')
+
     // compile, runtime, testCompile, testRuntime
     // implementation, runtimeOnly, testImplementation, testRuntimeOnly 로 각각 대체 되었다.
 }
