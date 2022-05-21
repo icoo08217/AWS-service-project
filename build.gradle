@@ -16,8 +16,9 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management' // 스프링 부트의 의존성들을 관리해 주는 플러그인.
 
-group 'com.BC.book'
+group 'com.bc.book'
 version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
 
 repositories { // 각종 의존성(라이브러리)들을 어떤 원격 저장소에서 받을지를 정한다.
     mavenCentral()
@@ -30,6 +31,13 @@ dependencies { // 프로젝트 개발에서 필요한 의존성들을 선언하�
 
     implementation('org.springframework.boot:spring-boot-starter-web')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    implementation('org.projectlombok:lombok')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('com.h2database:h2')
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+    implementation('org.springframework.session:spring-session-jdbc')
+    testImplementation('org.springframework.security:spring-security-test')
 
     // compile, runtime, testCompile, testRuntime
     // implementation, runtimeOnly, testImplementation, testRuntimeOnly 로 각각 대체 되었다.
