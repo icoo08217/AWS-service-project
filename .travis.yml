@@ -1,4 +1,4 @@
-# Travis CI 설정 야믈 파일
+# Travis CI 설정 야믈 파일 + plan free 카드 등록까지 완료
 language: java
 
 jdk:
